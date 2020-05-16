@@ -1,4 +1,4 @@
-package com.dream.TutorialCreator;
+package com.dream.tutorialcreator;
 
 import org.springframework.boot.builder.SpringApplicationBuilder;
 import org.springframework.boot.web.servlet.support.SpringBootServletInitializer;
