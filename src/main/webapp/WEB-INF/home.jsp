@@ -7,6 +7,6 @@
 <title>Spring Security Check</title>
 </head>
 <body>
-	<h1>Welcome to spring security</h1>
+	<h1>Welcome to spring security!</h1>
 </body>
 </html>
