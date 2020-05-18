@@ -9,5 +9,10 @@ public class Home {
 	public String home() {
 		return "home";
 	}
+	
+	@RequestMapping("/login")
+	public String getLoginForm() {
+		return "login";
+	}
 
 }
