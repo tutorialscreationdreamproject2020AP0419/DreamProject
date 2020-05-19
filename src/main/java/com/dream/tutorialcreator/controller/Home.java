@@ -14,5 +14,9 @@ public class Home {
 	public String getLoginForm() {
 		return "login";
 	}
+	@RequestMapping("/signUp")
+	public String getSignUpForm() {
+		return "signUp";
+	}
 
 }

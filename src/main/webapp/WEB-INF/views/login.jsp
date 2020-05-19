@@ -4,6 +4,9 @@
 	xmlns:sec="https://www.thymeleaf.org/thymeleaf-extras-springsecurity3">
 <%@ taglib uri="http://www.springframework.org/tags" prefix="spring"%>
 
+
+<head>
+
 <link rel="stylesheet"
 	href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
 	integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
@@ -20,10 +23,11 @@
 	integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
 	crossorigin="anonymous"></script>
 
-<link rel="stylesheet" href="/css/adminLogin.css">
-<!------ Include the above in your HEAD tag ---------->
-<head>
 
+<script type="text/javascript"  src="/js/adminLogin.js" async ></script>
+<link rel="stylesheet" href="/css/adminLogin.css">
+
+<!------ Include the above in your HEAD tag ---------->
 <title><spring:message code="message.login.title" /></title>
 </head>
 <body>
@@ -55,14 +59,16 @@
 								class="form-check-input"> <small><spring:message
 										code="message.login.rememberMe" /></small>
 							</label>
-							<button type="submit" class="btn btn-login float-right">Submit</button>
+							<button type="submit" class="btn btn-outline-primary btn-sm float-right">Submit</button>
 						</div>
 
 					</form>
 					<div class="copy-text">
 						<i class="fa fa-heart"></i> Created by Lalit <i
 							class="fa fa-heart"></i>
+							<button type="submit" class="btn btn-outline-dark btn-sm float-right signUp">Sign Up</button>
 					</div>
+					
 				</div>
 				<div class="col-md-8 banner-sec">
 					<div id="carouselExampleIndicators" class="carousel slide"
@@ -125,5 +131,6 @@
 				</div>
 			</div>
 	</section>
+	
 </body>
 </html>
