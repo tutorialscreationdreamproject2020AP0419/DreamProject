@@ -10,10 +10,11 @@ public class Home {
 		return "home";
 	}
 	
-	@RequestMapping("/login")
+	@RequestMapping("/logins")
 	public String getLoginForm() {
 		return "login";
 	}
+	
 	@RequestMapping("/signUp")
 	public String getSignUpForm() {
 		return "signUp";
