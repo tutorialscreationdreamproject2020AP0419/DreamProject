@@ -2,6 +2,7 @@ package com.dream.tutorialcreator.controller;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 
 @Controller
 public class Home {
@@ -18,6 +19,11 @@ public class Home {
 	@RequestMapping("/signUp")
 	public String getSignUpForm() {
 		return "signUp";
+	}
+	@RequestMapping("/slider")
+	public String getSlider() {
+		
+		return "slider";
 	}
 
 }

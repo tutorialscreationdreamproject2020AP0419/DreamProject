@@ -1,5 +1,5 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
-    pageEncoding="ISO-8859-1"%>
+	pageEncoding="ISO-8859-1"%>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
@@ -19,39 +19,76 @@
 	src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
 	integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
 	crossorigin="anonymous"></script>
-<link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">	
+<link href="https://fonts.googleapis.com/css?family=Roboto:400,700"
+	rel="stylesheet" />
 
-<link rel="stylesheet" href="/css/adminSignUp.css">
+<link rel="stylesheet" href="/css/adminSignUp.css" />
+<script type="text/javascript" src="/js/adminSignUp.js" async></script>
+
+
 <!------ Include the above in your HEAD tag ---------->
 <title>Insert title here</title>
 </head>
 <body>
 
-<div class="signup-form">
-    <form action="/examples/actions/confirmation.php" method="post">
-		<h2>Sign Up</h2>
-		<p>It's free and only takes a minute.</p>
-		<hr>
-        <div class="form-group">
-        	<input type="text" class="form-control" name="username" placeholder="Username" required="required">
-        </div>
-        <div class="form-group">
-        	<input type="email" class="form-control" name="email" placeholder="Email Address" required="required">
-        </div>
-		<div class="form-group">
-            <input type="password" class="form-control" name="password" placeholder="Password" required="required">
-        </div>
-		<div class="form-group">
-            <input type="password" class="form-control" name="confirm_password" placeholder="Confirm Password" required="required">
-        </div>
-		<div class="form-group d-flex justify-content-center">
-            <button type="submit" class="btn btn-outline-primary ">Submit</button>
-        </div>
-		<p class="small text-center">By clicking the Sign Up button, you agree to our <br><a href="#">Terms &amp; Conditions</a>, and <a href="#">Privacy Policy</a>.</p>
-    </form>
-	<div class="text-center">Already have an account? <a href="/login">Login here</a></div>
-</div>
+	<div class="signup-form">
+		<form  method="get">
+			<h2>Sign Up</h2>
+			<p>It's free and only takes a minute.</p>
+			<hr>
+			<div class="form-group">
+				<input type="text" class="form-control" name="username"
+					placeholder="Username" required="required">
+			</div>
+			<div class="form-group">
+				<input type="email" class="form-control" name="email"
+					placeholder="Email Address" required="required">
+			</div>
+			<div class="form-group">
+				<input type="password" class="form-control" name="password"
+					id="password" placeholder="Password" required="required">
 
+			</div>
+			<div class="aro-pswd_info">
+		<div id="pswd_info">
+			<h4>Password must be requirements</h4>
+			<ul>
+				<li id="letter" class="invalid">At least <strong>one
+						letter</strong></li>
+				<li id="capital" class="invalid">At least <strong>one
+						capital letter</strong></li>
+				<li id="number" class="invalid">At least <strong>one
+						number</strong></li>
+				<li id="length" class="invalid">Be at least <strong>8
+						characters</strong></li>
+				<li id="space" class="invalid">be<strong> use
+						[~,!,@,#,$,%,^,&,*,-,=,.,;,']</strong></li>
+				<li id="confirmPass" class="invalid">Password
+						and Confirm Password should be<strong>  equal </strong></li>
+			</ul>
+		</div>
+	</div>
+			<div class="form-group">
+				<input type="password" class="form-control" name="confirm_password"
+					id="confirm_password" placeholder="Confirm Password"
+					required="required">
+			</div>
+			
+		</form>
+		<div class="form-group d-flex justify-content-center">
+				<button type="submit" class="btn btn-outline-primary " id="signUp">Submit</button>
+			</div>
+			<p class="small text-center">
+				By clicking the Sign Up button, you agree to our <br>
+				<a href="#">Terms &amp; Conditions</a>, and <a href="#">Privacy
+					Policy</a>.
+			</p>
+		<div class="text-center">
+			Already have an account? <a href="/logins">Login here</a>
+		</div>
+	</div>
+
+	
 
 </body>
 </html>
