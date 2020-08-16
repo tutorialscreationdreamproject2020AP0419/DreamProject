@@ -11,7 +11,7 @@ public class Home {
 		return "home";
 	}
 	
-	@RequestMapping("/logins")
+	@RequestMapping("/login")
 	public String getLoginForm() {
 		return "login";
 	}

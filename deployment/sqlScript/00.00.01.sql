@@ -10,4 +10,4 @@ create table mysql.users (id int,
                         );
 
 insert into mysql.users (id, active, password, role, username,ISACCOUNTNONEXPIRED,ISACCOUNTNONLOCKED,ISCREDIANTIALSNONEXPIRED) 
-						values (2, 1, "9044773351","ROLE_USER", "user",1,1,1); 
+						values (2, 1, "$2a$12$XIgz4whV7uV6dAOmLb2nkuF5GF.dBlxxg8zULC8vYdh9OI2TohI3i","ROLE_USER", "user",1,1,1); 
